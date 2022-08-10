@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Responivse Nav Assignment</title>
+</head>
+<body>
+    <div class="wrapper" id="main">
+
+        <div class="header-box">
+            <h1>Responivse Nav Asssignment</h1>
+        </div>
+
+        <div class="nav">
+            <ol>
+                <span id="menu">
+                    <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+    
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+    
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    
+                    </svg>
+            </ol>
+        </div>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+
+        <div class="description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac orci et orci ullamcorper fringilla.
+                 Curabitur sem libero, congue id tortor non, posuere consectetur purus. Sed maximus nibh at fermentum gravida. 
+                 Cras quis lorem elit. Etiam sed ullamcorper quam. Nunc vitae turpis at est ornare accumsan. Vestibulum tincidunt ullamcorper sodales. 
+            </p>
+        </div>
+
+        <div class="image-row-1">
+            <img src="img/dorian-baumann-Sl-2gao5QE4-unsplash.jpg">
+            <img src="img/eugene-deshko-dIMJcgCYZJw-unsplash.jpg">
+            <img src="img/paul-scutt-AcYKZWSdgkw-unsplash.jpg">
+        </div>
+
+
+    </div>
+
+    <script>
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '60px';
+            document.getElementById('main').style.marginLeft = '60px';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+
+
+</body>
+</html>
